@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">DevPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="highlight">MinhNK</span></h1>
+            <p>A Frontend Developer passionate about building intuitive web experiences and logical system architectures.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="avatar.jpg" alt="My Profile Picture" class="profile-pic">
+            <div class="about-text">
+                <p>I am a detail-oriented developer who enjoys exploring new web technologies. I specialize in turning complex ideas into clear system flows and user-friendly interfaces. My goal is to continuously improve my skills in Frontend Development and System Design to contribute to impactful real-world projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-light">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">ReactJS (Hooks, Context)</div>
+            <div class="skill">HTML5, CSS3 & Tailwind</div>
+            <div class="skill">JavaScript (ES6+) & DOM</div>
+            <div class="skill">System Flow Analysis (Visual Paradigm)</div>
+            <div class="skill">RESTful API Integration</div>
+            <div class="skill">Git & GitHub Version Control</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="frontend">Frontend & React</button>
+            <button class="filter-btn" data-filter="design">System Design</button>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card" data-category="design" data-title="System Flow Architecture" data-desc="Documented and summarized the operation of a complex multi-service software platform. Used Visual Paradigm Community Edition to create concise flowcharts, helping the development team quickly grasp the data processing logic.">
+                <h3>System Flow Architecture</h3>
+                <p class="tag">System Design</p>
+                <button class="view-btn">View Details</button>
+</div>
+            
+            <div class="project-card" data-category="frontend" data-title="Cloud Storage Dashboard" data-desc="Developed a user interface for a cloud storage management system capable of handling massive user data plans (up to 5TB). Optimized UI rendering to ensure smooth file and folder navigation without lag.">
+                <h3>Cloud Storage UI</h3>
+                <p class="tag">React & Performance</p>
+                <button class="view-btn">View Details</button>
+            </div>
+
+            <div class="project-card" data-category="frontend" data-title="E-commerce Platform" data-desc="An online shopping platform featuring a product catalog, shopping cart, and filtering system. Managed complex application state using Redux and built a responsive UI with Tailwind CSS.">
+                <h3>E-commerce Platform</h3>
+                <p class="tag">Frontend & React</p>
+                <button class="view-btn">View Details</button>
+            </div>
+
+            <div class="project-card" data-category="frontend" data-title="AI Content Generator" data-desc="An automated content generation interface connected to Large Language Model APIs. Implemented robust async/await handling to manage API responses and integrated sleek loading animations.">
+                <h3>AI Prompter App</h3>
+                <p class="tag">Frontend & API</p>
+                <button class="view-btn">View Details</button>
+            </div>
+
+            <div class="project-card" data-category="frontend" data-title="Kanban Task Manager" data-desc="A drag-and-drop task management application similar to Trello. Utilized React Context API for global state management and LocalStorage for persistent data saving across sessions.">
+                <h3>Kanban Board</h3>
+                <p class="tag">Frontend & React</p>
+                <button class="view-btn">View Details</button>
+            </div>
+
+            <div class="project-card" data-category="design" data-title="UI Component Library" data-desc="Designed and developed a custom library of reusable UI components (Buttons, Modals, Cards) utilizing React and Styled Components to accelerate future development cycles.">
+                <h3>Component Library</h3>
+                <p class="tag">System Design</p>
+                <button class="view-btn">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light">
+        <h2>Get In Touch</h2>
+        <p>Have an exciting project in mind? Let's connect!</p>
+        <form class="contact-form" id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message..." required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 [Your Name]. Built with code and passion.</p>
+</footer>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Project Title</h2>
+            <p id="modal-desc">Project details will appear here.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
