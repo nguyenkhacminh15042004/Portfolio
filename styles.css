@@ -141,16 +141,19 @@ h2::after {
 }
 
 .profile-pic {
-    width: 250px;
-    height: 250px;
-    border-radius: 10px; /* Bo góc vuông vức hơn thay vì tròn */
+    width: 350px;
+    height: 350px;
+    border-radius: 12px;
     object-fit: cover;
-top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(10, 25, 47, 0.9); /* Nền mờ tối */
-    align-items: center;
-    justify-content: center;
+
+    border: 2px solid var(--neon-accent);
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
+
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
 }
 
 .modal-content {
